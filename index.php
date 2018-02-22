@@ -6,7 +6,8 @@
               <h3 class="panel-title">Bienvenue sur votre tableau de bord !</h3>
             </div>
             <div class="panel-body">
-				<p>Ici sera présenté toutes les options du sites.</p>
+		<p>Ici sera présenté toutes les options du sites.</p>
+		<p>Et un petit test de git !!</p>		
             </div>
           </div>
         </section>
