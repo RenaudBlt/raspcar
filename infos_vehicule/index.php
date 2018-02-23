@@ -1,4 +1,4 @@
-<?php require "header.php"; ?>
+<?php require "../header.php"; ?>
 
         <section class="col-sm-10">
           <div class="panel panel-default">
@@ -11,4 +11,4 @@
           </div>
         </section>
 
-<?php include('footer.php'); ?>
+<?php include('../footer.php'); ?>
