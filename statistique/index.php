@@ -7,7 +7,6 @@
 				</div>
 				<div class="panel-body">
 					<p align="center"><a href="ajout_plein.php"><button type="button" class="btn btn-success">Ajouter un nouveau plein</button></a><br/></p>
-					<p><a href="chart.php">affichier les datas des pleins.</p>
 					<div class="table-responsive">          
 						<table class="table">
 							<thead>

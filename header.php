@@ -34,6 +34,6 @@
             <li <?php if($page == "/index.php"){echo 'class="active"';} ?>> <a href="/index.php"> <span class="glyphicon glyphicon-home"></span> Accueil </a> </li>
             <li <?php if($page == "/infos_vehicule.php"){echo 'class="active"';} ?>> <a href="/infos_vehicule.php"> <span class="glyphicon glyphicon-info-sign"></span> Infos du véhicule </a> </li>
             <li <?php if($page == "/codes_erreurs.php"){echo 'class="active"';} ?>> <a href="/codes_erreurs.php"> <span class="glyphicon glyphicon-wrench"></span> Codes d'erreurs </a> </li>
-            <li <?php if($page == "/statistique/statistique.php"){echo 'class="active"';} ?>> <a href="/statistique/statistique.php"> <span class="glyphicon glyphicon-stats"></span> Statistique </a> </li>
+            <li <?php if($page == "/statistique/"){echo 'class="active"';} ?>> <a href="/statistique/"> <span class="glyphicon glyphicon-stats"></span> Statistique </a> </li>
           </ul>
         </nav>
