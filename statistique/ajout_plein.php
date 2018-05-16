@@ -15,7 +15,8 @@ if(!empty($_REQUEST)){
 				<?php
 				// Ajout d'un plein
 				if(!empty($ajouter_plein)){
-					$req=$bdd->exec('INSERT INTO essence VALUES ("", "'.$km.'", "'.$montant.'", "'.$quantite.'", "'.$prix_litre.'", "'.$date.'", "'.$carburant.'")');
+					$conso = ($quantite*100)/$km;
+					$req=$bdd->exec('INSERT INTO essence VALUES ("", "'.$km.'", "'.$montant.'", "'.$quantite.'", "'.$prix_litre.'", "'.$date.'", "'.$carburant.'", "'.$conso.'")');
 					echo "Nouveau plein ajouté !!!";
 					$fin = 1;
 				}else{

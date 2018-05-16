@@ -17,6 +17,7 @@
 									<th>Carburant</th>
 									<th>Quantité</th>
 									<th>Prix du litre</th>
+									<th>Conso L/100</th>
 									<th>Action</th>
 								</tr>
 							</thead>
@@ -45,6 +46,7 @@
 									<td><?php echo $donnees['type_carburant']; ?></td>
 									<td><?php echo $donnees['quantite']; ?> L</td>
 									<td><?php echo $donnees['pu']; ?> €/L</td>
+									<td><?php echo $donnees['conso']; ?></td>
 									<td><a href="efface_plein.php?id=<?php echo $donnees['id']; ?>"><img src="../images/delete.png"></a></td>
 								</tr>
 				<?php } ?>
