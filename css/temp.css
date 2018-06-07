@@ -1,0 +1,90 @@
+.button {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border-radius: 15%;
+  border-radius: 15%;
+  position: relative;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 15px;
+  top: 15px;
+  border-radius: 50%;
+  background: #b19d92 -moz-linear-gradient(top, #efe4de 0%, #af998c 75%) no-repeat 50% 0%;
+  background: #b19d92 -webkit-linear-gradient(top, #efe4de 0%, #af998c 75%) no-repeat 50% 0%;
+  background: #b19d92 linear-gradient(top, #efe4de 0%, #af998c 75%) no-repeat 50% 0%;
+  box-shadow:
+    0 1px 2px rgba(255,255,255,1) inset,
+    1px 0 3px rgba(0,0,0,.25) inset,
+    0 3px 5px rgba(0,0,0,.6); 
+}
+.button:after {
+  content: '';
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  left: 22.5px;
+  top: 22.5px;
+  border-radius: 50%;
+  background: 
+    -moz-linear-gradient(left, transparent 49%, #000 49%, #000 50%, transparent 50%) 50% -80px,
+    -moz-linear-gradient(right top,white, #ee9900) 100% 0%,
+    -moz-linear-gradient(left top,#A00, orange) 0% 0%
+    ;
+
+
+
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  box-shadow:
+    0 -1px 2px rgba(255,255,255,1) inset,
+    -1px 0 3px rgba(0,0,0,.25) inset,
+    0 3px 3px rgba(0,0,0,.3) inset; 
+}
+.knob {
+  z-index: 10;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #b19d92 -moz-radial-gradient(top, #e7d9d0 0%, #c5b1a6 75%) no-repeat 50% 0%;
+  background: #b19d92 -webkit-radial-gradient(top, #e7d9d0 0%, #c5b1a6 75%) no-repeat 50% 0%;
+  background: #b19d92 radial-gradient(top, #e7d9d0 0%, #c5b1a6 75%) no-repeat 50% 0%;
+  box-shadow:
+    0 6px 5px rgba(255,255,255,.4) inset,
+    1px 0 3px rgba(0,0,0,.25) inset,
+    0 -6px 5px rgba(0,0,0,.2) inset,
+    0 15px 12px -5px rgba(0,0,0,.6); 
+  color: #FFF;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: -2px;
+  line-height: 80px;
+  text-align: center;
+  text-shadow:
+    0 1px 2px rgba(255,255,255,1),
+    0 -1px 1px rgba(0,0,0,.25);
+}
+.knob:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -12px 0 0 3px;
+  transform: rotate(230deg) translateY(-40px) rotate(-230deg);
+  border-radius: 50%;
+  z-index: 100;
+  background: #fe8400;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.35) inset,
+    0 0 18px #FFF;
+}

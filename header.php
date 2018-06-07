@@ -17,8 +17,16 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
     <link href="<?php echo $rootDirectory;?>css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php echo $rootDirectory;?>css/temp.css" rel="stylesheet">
+	<link href="<?php echo $rootDirectory;?>css/speed.css" rel="stylesheet">
+	<link href="<?php echo $rootDirectory;?>css/gauge.css" rel="stylesheet">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="<?php echo $rootDirectory;?>infos_vehicule/gauge.php"></script>
+	<script type="text/javascript" src="<?php echo $rootDirectory;?>infos_vehicule/lambda.php"></script>
+	<script type="text/javascript" src="<?php echo $rootDirectory;?>infos_vehicule/temp.php"></script>
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 	<script src="<?php echo $rootDirectory;?>Chart.js-2.7.1/dist/Chart.bundle.js"></script>
-    <script src="<?php echo $rootDirectory;?>Chart.js-2.7.1/samples/utils.js"></script>
+    <script src="<?php echo $rootDirectory;?>Chart.js-2.7.1/samples/utils.js"></script>	
   </head>
 
   <body>
