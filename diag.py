@@ -31,6 +31,16 @@ def cmdOdb(param):
 	elif param == "FUEL":
 		cmd = obd.commands.FUEL_STATUS
 		response = connection.query(cmd)
+	elif param == "ERREUR":
+		cmd = obd.commands.GET_DTC
+		response = connection.query(cmd)
+	elif param == "LISTE":
+		# liste des commandes supporté
+		commands = connection.supported_commands
+		f = open('liste_cmd.txt','w')
+		for command in commands:
+		  f.write(command.name + '\n')
+		f.close()
 	elif not param:
 		return "Aucun parametre de renseigne"
 	else:
