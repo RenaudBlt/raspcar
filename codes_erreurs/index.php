@@ -1,6 +1,7 @@
 <?php require "../header.php"; ?>
 <?php if(isset($_GET['erreur'])) {
-		exec("python3 ../liste.py");
+		$output = Shell_exec(escapeshellcmd('python3 /var/www/html/code_erreur.py')); 
+		echo $output;
 	} ?>
         <section class="col-sm-10 col-lg-offset-1">
           <div class="panel panel-default">
@@ -10,10 +11,14 @@
             <div class="panel-body">
 				<a href="?erreur" class="btn btn-warning">Actualiser les codes d'erreur</a>
 				<?php
-				if (file_exists('code_erreur.txt')) {
-					$lines = file("code_erreur.txt");
-					foreach($lines as $n => $line){
-					echo $line . "<br />";
+				if (file_exists('../code_erreur.txt')) {
+					$lines = file("../code_erreur.txt");
+					if(count($lines) < 5){
+						echo "Aucun code d'erreur à signaler";
+					}else{
+						foreach($lines as $n => $line){
+						echo $line . "<br />";
+						}
 					}
 				}
 				?>

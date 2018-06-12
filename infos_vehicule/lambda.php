@@ -3,8 +3,8 @@ header('Content-Type: application/javascript');
 
 require "../connexion_bdd.php";
 
-// $query = "SELECT AVG(conso) AS conso_moy FROM essence";
-// $conso_moy = $bdd->query($query)->fetch();
+$query = "SELECT volt FROM O2 ORDER BY `id` DESC LIMIT 1";
+$volt = $bdd->query($query)->fetch();
 ?>
 
 google.charts.load('current', {'packages':['gauge']});
@@ -14,7 +14,7 @@ function drawChart() {
 
   var data = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    ['sonde', 0.4],
+    ['sonde', <?php echo $volt['volt'];?>],
   ]);
 
   var options = {

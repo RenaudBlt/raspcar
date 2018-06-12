@@ -3,8 +3,9 @@ header('Content-Type: application/javascript');
 
 require "../connexion_bdd.php";
 
-// $query = "SELECT AVG(conso) AS conso_moy FROM essence";
-// $conso_moy = $bdd->query($query)->fetch();
+$query = "SELECT temp FROM coolant_temp ORDER BY `id` DESC LIMIT 1";
+$temp = $bdd->query($query)->fetch();
+// echo $temp;
 ?>
 
 google.charts.load('current', {'packages':['gauge']});
@@ -14,7 +15,7 @@ function drawChart() {
 
   var data = google.visualization.arrayToDataTable([
     ['Label', 'Value'],
-    ['°C', 82],
+    ['°C', <?php echo $temp['temp'];?>],
   ]);
 
   var options = {
