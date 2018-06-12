@@ -1,5 +1,5 @@
 <?php require "../header.php"; ?>
-        <section class="col-sm-3">
+        <section class="col-sm-4">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Vitesse Max</h3>
@@ -9,7 +9,7 @@
 				</div>
             </div>
         </section>
-		<section class="col-sm-3">
+		<section class="col-sm-4">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Vitesse Moyenne</h3>
@@ -19,7 +19,7 @@
             </div>
           </div>
         </section>
-		<section class="col-sm-3">
+		<section class="col-sm-4">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">O à 100 km/h</h3>
@@ -29,7 +29,7 @@
             </div>
           </div>
         </section>
-		<section class="col-sm-3">
+		<section class="col-sm-4">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Température du liquide de refroidissement</h3>
@@ -39,7 +39,7 @@
             </div>
           </div>
         </section>
-		<section class="col-sm-3">
+		<section class="col-sm-4">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Consommation moyenne</h3>
@@ -50,7 +50,7 @@
             </div>
           </div>
         </section>
-		<section class="col-sm-3">
+		<section class="col-sm-4">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Sonde lambda</h3>

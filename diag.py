@@ -1,3 +1,4 @@
+#! /usr/bin/ python
 import obd
 import sys
 # import os
@@ -33,11 +34,14 @@ def cmdOdb(param):
 		response = connection.query(cmd)
 	elif param == "ERREUR":
 		cmd = obd.commands.GET_DTC
-		response = connection.query(cmd)
+		responses = connection.query(cmd)
+		f = open('/var/www/html/codes_erreurs/code_erreur.txt','w')
+		f.write(str(responses.value))
+		f.close()
 	elif param == "LISTE":
 		# liste des commandes supporté
 		commands = connection.supported_commands
-		f = open('liste_cmd.txt','w')
+		f = open('/var/www/html/liste_cmd.txt','w')
 		for command in commands:
 		  f.write(command.name + '\n')
 		f.close()

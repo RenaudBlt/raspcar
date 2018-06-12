@@ -1,10 +1,13 @@
 <?php require "header.php"; ?>
 
 	<?php if(isset($_GET['liste'])) {
-		shell_exec("python3 diag.py LISTE");
+		// passthru('python3 /var/www/html/test.py');
+		$output = Shell_exec(escapeshellcmd('python3 /var/www/html/liste.py')); 
+		echo $output;
+		// pcntl_exec('python3 /var/www/html/liste.py');
 	} ?>
 
-        <section class="col-sm-10">
+        <section class="col-sm-10 col-lg-offset-1">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Bienvenue sur votre tableau de bord !</h3>
@@ -14,7 +17,7 @@
 				</div>
 			</div>
         </section>
-		<section class="col-sm-10">
+		<section class="col-sm-10 col-lg-offset-1">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Liste des commandes supportées</h3>

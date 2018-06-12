@@ -1,6 +1,6 @@
 <?php require "../header.php"; ?>
 
-        <section class="col-sm-10">
+        <section class="col-sm-10 col-lg-offset-1">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">Suivi du plein du véhicule</h3>
@@ -58,5 +58,31 @@
 					</div>
 				</div>
 			</div>
-
+		</section>
+		<section class="col-sm-10 col-lg-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Suivi des émissions toxiques</h3>
+				</div>
+				<div class="panel-body">
+					<div align="center">
+					<?php require "chart_O2.php"; ?>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="col-sm-10 col-lg-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Suivi de la température du liquide de refroidissement</h3>
+				</div>
+				<div class="panel-body">
+					<div align="center">
+					<?php require "chart_coolant_temp.php"; ?>
+					</div>
+				</div>
+			</div>
+		</section>
+<?php require "var_chart.php"; ?>
+		
 <?php include('../footer.php'); ?>
