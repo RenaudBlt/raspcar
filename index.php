@@ -1,10 +1,8 @@
 <?php require "header.php"; ?>
 
 	<?php if(isset($_GET['liste'])) {
-		// passthru('python3 /var/www/html/test.py');
 		$output = Shell_exec(escapeshellcmd('python3 /var/www/html/liste.py')); 
 		echo $output;
-		// pcntl_exec('python3 /var/www/html/liste.py');
 	} ?>
 
         <section class="col-sm-10 col-lg-offset-1">

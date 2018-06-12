@@ -5,7 +5,6 @@ require "../connexion_bdd.php";
 
 $query = "SELECT temp FROM coolant_temp ORDER BY `id` DESC LIMIT 1";
 $temp = $bdd->query($query)->fetch();
-// echo $temp;
 ?>
 
 google.charts.load('current', {'packages':['gauge']});
